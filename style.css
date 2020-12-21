@@ -1,5 +1,159 @@
-h1 {
-  font-size: 24px;
-  padding-bottom: 8px;
-  border-bottom: 1px solid #ccc;
+body {
+  margin: 0;
+  padding: 0;
+}
+header {
+  margin: 0;
+  padding: 0;
+  background-image: url(img/mountain.png);
+  background-size: cover;
+  height: 160px;
+}
+header h1 {  
+  margin: 0;
+  font-size: 16px;
+  padding-top: 32px;
+  padding-left: 16px;
+}
+header p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: end;
+  padding-right: 48px;
+}
+nav {
+  background-color: blue;
+}
+ul {
+  margin: 0;
+  list-style: none;
+}
+li {
+  height: 32px;
+  margin: 0;
+}
+a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+}
+nav div {  
+  height: 48px;
+  padding-left: 16px; 
+  border: 1px solid skyblue;
+  cursor: pointer;
+}
+nav p {
+  margin: 0;
+  line-height: 48px;
+  color: #fff;
+}
+nav div:hover {
+  opacity: 0.8;
+}
+nav section {
+  display: none;
+}
+.programing:hover .programing-li {
+  display: block;
+}
+.minigame:hover .minigame-li {
+  display: block;
+}
+.programing:hover {
+  height: 150px;
+}
+.minigame:hover {
+  height: 150px;
+}
+main {
+  margin: 0;
+  padding: 32px;
+  background-color: mistyrose;
+}
+article {
+  margin-bottom: 60px;
+}
+article h2 {
+  font-size: 14px;
+}
+article p {
+  font-size: 14px;
+  line-height: 1.35rem;
+}
+.profile {
+  width: 100%;
+  margin: 0 auto;
+  padding: 16px 0;
+}
+.profile-img img {
+  display: inline;
+  text-align: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  margin: 0;
+}
+.profile-img {
+  width: 140px;
+  margin: 0 auto;
+  text-align: center;
+}
+.profile-img h1 {
+  margin: 0px;
+}
+.profile-comment {
+  line-height: 28px;
+}
+.profile p {
+  font-size: 14px;
+  line-height: 1.35rem;
+}
+footer {
+  margin: 0;
+  height: 60px;
+  background-color: #432;
+  text-align: center;
+  color: #fff;
+  font-size: 10px;
+  letter-spacing: 0.05rem;
+  line-height: 60px;
+}
+@media (min-width:510px) {
+  header {
+    height: 180px;
+  }
+  header h1 {
+    font-size: 24px;
+    padding-top: 120px;
+  }
+  nav {
+    display: flex;
+  }
+  .programing {
+    width: 255px;
+    border: none;
+  }
+  .minigame {
+    width: calc(100% - 255px);
+    border: none;
+  }
+  
+}
+@media (min-width: 650px) {
+  .profile {
+    display: flex;
+    justify-content: space-between;
+  }
+  .profile-img {
+    padding-right: 32px;
+  }
+}
+@media (min-width: 950px) {
+  .profile {
+    width: 870px;
+    margin: 0 auto;
+  }
 }
