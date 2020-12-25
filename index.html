@@ -1,9 +1,11 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>48才からプログラミングをはじめてみた</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,24 +14,26 @@
     <p>プログラミングっておもしろい！</p>
   </header>
   <nav>
-    <div class="programing">
-      <p>プログラミングの勉強方法</p>
-      <section class="programing-li">
+    <div data-id="programing">
+      <p>色々なプログラミング</p>
+      <section id="programing">
         <ul>
+          <li><a href="https//bajita19720814.github.io/sitemake/.">HTML+CSS:製作中</a></li>
           <li><a href="">Scratch:制作中</a></li>
-          <li><a href="">本で学習:製作中</a></li>
-          <li><a href="">動画で学習:製作中</a></li>
+          <li><a href="">JavaScript:製作中</a></li>
+          <li><a href="">PHP:勉強中</a></li>
       </section>
     </div>
-    <div class="minigame">
+    <div data-id="minigame">
       <p>ミニゲーム</p>
-      <section class="minigame-li">
+      <section id="minigame">
         <ul>
           <li><a href="https://bajita19720814.github.io/colorgame/.">
           色のミニゲーム</a></li>
           <li><a href="https://bajita19720814.github.io/cardgame/.">
           神経衰弱ゲーム</a></li>
-          <li><a href="">シューティングゲーム:製作中</a></li>
+          <li><a href="https://bajita19720814.github.io/dategame/.">時間と日付の計算ゲーム</a></li>
+          <li><a href="https://bajita19720814.github.io/shootinggame/.">シューティングゲーム</a></li>
         </ul>
       </section>
     </div>
@@ -37,17 +41,82 @@
   <main>
     <article>
       <h1 id="study-title">プログラミングって難しそう?</h1>
-      <h2>HTMLとCSSでのサイトの制作だけなら、たいして難しくないし、いいパソコンを買う必要もない。</h2>
-      <p>私もプログラミングなんて難しそうって思ってました。パソコンもいいものを買わないとできなさそうって。でも、HTMLとCSSでのサイトの制作だけなら、たいして難しくありません。私は本を見ながらはじめましたが、エディターのインストール方法なども丁寧に説明してあるのでとりあえず本の通りに作ることができました。インターネットのブラウザで自分の作ったページが表示されていくのは楽しいです。</p>
-      <h2>プログラミング言語って色々あるけど、なんで?</h2>
-      <p>サイトでコメントなんかを送ってもらうには、PHPなどのプログラムが必要だとわかり、プログラムにも挑戦したいな～と思いました。プログラミングの学習方法について調べてみました。</p>
-      <h2>ミニゲームを作ってみたよ</h2>
-      <p>ドットインストールでレッスンを応用して、JavaScriptでミニゲームをつくってみました。</p>
-     
-      
-
-      
-
+      <section class="sitemake">
+        <h2>サイト制作に挑戦してみた</h2>
+        <p>私もプログラミングなんて難しそうって思ってました。パソコンもいいものを買わないとできなさそうって。でも、HTMLとCSSでのサイトの制作だけなら、たいして難しくありません。パソコンも８年前に買ったwindows７を8.1にアップロードして使っていますが、問題ありません。インターネットのブラウザで自分の作ったページが表示されていくのは楽しいです。"HTML+CSS"のページではパソコンのメモ帳の機能で試してみることができますので皆さんも挑戦してみてください。</p>
+        <div class="button-container">
+          <span class="material-icons">
+          play_arrow
+          </span>
+          <span class="material-icons">
+            play_arrow
+          </span>
+          <span class="material-icons">
+            play_arrow
+          </span>
+          <div class="button"><a href="">HTML+CSS</a></div>
+        </div> 
+      </section>
+      <section class="scratch">
+        <h2>Scrachに挑戦してみた</h2>
+        <p>サイトでコメントなんかを送ってもらうには、PHPなどのプログラムが必要です。でもプログラミング言語っていっぱいあるし、何をどう勉強したらいいか、わかりませんでした。プログラミングとは何かをつかむのにScratchがいいとお勧めされていたので挑戦してみました。コードを使わずにプログラミングできるので、簡単にゲームを作ることができます。</p> 
+        <div class="button-container">
+          <span class="material-icons">
+          play_arrow
+          </span>
+          <span class="material-icons">
+            play_arrow
+          </span>
+          <span class="material-icons">
+            play_arrow
+          </span>
+          <div class="button"><a href="">Scratchとは</a> </div>
+        </div> 
+      </section>  
+      <section class="javaScript">
+        <h2>JavaScriptに挑戦してみた</h2>
+        <p>他のプログラミング言語は開発環境を構築しないと動作確認ができなけど、JavaScriptはインターネットブラウザで動作確認ができるので、JavaScriptを勉強してみました。このページのメニューをクリックしたときに詳細を表示するところもJavaScriptを使いました。JavaScriptでミニゲームも作ってみました。動くものが作れるのは楽しいです。</p>
+        <div class="button-container">
+          <span class="material-icons">
+          play_arrow
+          </span>
+          <span class="material-icons">
+            play_arrow
+          </span>
+          <span class="material-icons">
+            play_arrow
+          </span>
+          <div class="button"><a href="">JavaScript</a> </div>
+        </div> 
+        <div class="button-container">
+          <span class="material-icons">
+          play_arrow
+          </span>
+          <span class="material-icons">
+            play_arrow
+          </span>
+          <span class="material-icons">
+            play_arrow
+          </span>
+          <div class="button"><a href=""> ミニ ゲーム </a> </div>
+        </div> 
+      </section>
+      <section class="php">
+        <h2>PHPに挑戦中</h2>
+        <p>サイトからデータのやり取りをするためにはPHPが必要なので、XAMPPを使ったローカル開発環境でPHPの勉強をしています。</p>
+        <div class="button-container">
+          <span class="material-icons">
+          play_arrow
+          </span>
+          <span class="material-icons">
+            play_arrow
+          </span>
+          <span class="material-icons">
+            play_arrow
+          </span>
+          <div class="button"><a href="">PHP</a> </div>
+        </div> 
+      </section>
     </article>
     </section>
     <section class="profile">
@@ -65,5 +134,6 @@
   <footer>
     bajita19720814.github.io
   </footer>
+  <script src="main.js"></script>
 </body>
 </html>

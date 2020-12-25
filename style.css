@@ -5,7 +5,7 @@ body {
 header {
   margin: 0;
   padding: 0;
-  background-image: url(img/mountain.png);
+  background-image: url(img/bluesky2020.12.png);
   background-size: cover;
   height: 160px;
 }
@@ -33,11 +33,12 @@ li {
   height: 32px;
   margin: 0;
 }
-a {
+nav a {
   display: block;
   text-decoration: none;
   color: #fff;
 }
+
 nav div {  
   height: 48px;
   padding-left: 16px; 
@@ -55,17 +56,11 @@ nav div:hover {
 nav section {
   display: none;
 }
-.programing:hover .programing-li {
+nav section.show {
   display: block;
 }
-.minigame:hover .minigame-li {
-  display: block;
-}
-.programing:hover {
-  height: 150px;
-}
-.minigame:hover {
-  height: 150px;
+nav div.active {
+  height: 180px;
 }
 main {
   margin: 0;
@@ -73,7 +68,13 @@ main {
   background-color: mistyrose;
 }
 article {
-  margin-bottom: 60px;
+  margin-bottom: 32px;
+}
+article section {
+  margin-bottom: 32px;
+}
+article h1 {
+  font-size: 18px;
 }
 article h2 {
   font-size: 14px;
@@ -121,6 +122,89 @@ footer {
   letter-spacing: 0.05rem;
   line-height: 60px;
 }
+span {
+  display: block;
+  font-size: 32px;
+  color: #432;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.button-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  justify-items: right;
+  margin-bottom: 10px;
+}
+.button-container span:nth-child(1) {
+  animation: play1 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes play1 {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.button-container span:nth-child(2) {
+  animation: play2 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes play2 {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.button-container span:nth-child(3) {
+  animation: play3 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes play3 {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.button {
+  padding: 4px 8px;
+  margin-left: 16px;
+  background-color: #432;
+  border-radius: 4px;
+}
+
+.button a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+}
+
 @media (min-width:510px) {
   header {
     height: 180px;
@@ -132,12 +216,12 @@ footer {
   nav {
     display: flex;
   }
-  .programing {
-    width: 255px;
+  nav div:nth-child(1) {
+    width: 205px;
     border: none;
-  }
-  .minigame {
-    width: calc(100% - 255px);
+  }  
+ nav div:nth-child(2) {
+    width: calc(100% - 205px);
     border: none;
   }
   
@@ -156,4 +240,9 @@ footer {
     width: 870px;
     margin: 0 auto;
   }
+  article {
+    width: 870px;
+    margin: 0 auto;
+  }
+  
 }
