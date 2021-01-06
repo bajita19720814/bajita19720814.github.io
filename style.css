@@ -236,6 +236,15 @@ span {
   }
 }
 @media (min-width: 950px) {
+  header h1 {
+    padding-left: calc((100% - 950px) / 2 + 16px);
+  }
+  header p {
+    padding-right: calc((100% - 950px) / 2 + 48px) ;
+  }
+  nav {
+    padding-left: calc((100% - 950px) / 2);
+  }
   .profile {
     width: 870px;
     margin: 0 auto;
