@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="bajitaのポートフォリオサイトです。">
+    <meta name="keywords" content="bajita, ポートフォリオ, webコーディング">
+    <title>bajita's portfolio</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=mail" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">   
+
+</head>
+<body>
+    <div id="overlay" class="hidden">
+        <div id="overlay_menu" class="hidden">
+            <div id="close" class="menu_box"><span class="material-icons">close</span></div>
+            <div class="overlay_index">
+                <a href="#hero">top</a><br>
+                <a href="#about">about</a><br>
+                <a href="#work">work</a><br>
+                <a href="#contact">contact</a>
+            </div>
+        </div>
+        <div id="overlay_web" class="overlay_container hidden">
+            <div id="close_web" class="menu_box close"><span class="material-icons">close</span></div>
+            <div class="detail_container">
+                <video src="img/webapp.mp4" autoplay muted></video>
+                <div>
+
+                    <h3>読み書きが苦手な家族でも使える<br>　　　　シンプルなメッセージアプリ</h3>
+                    <p>
+                        使用技術：<br>
+                        　React + Vite（フロントエンド）<br>
+                        　Firebase Authentication（ログイン）<br>
+                        　Firebase Firestore（メッセージ保存）<br>
+                        　Firebase Functions（サーバー処理）<br>
+                        　Firebase Hosting（デプロイ）<br>
+                        　Web Speech API（音声認識）
+                    </p>
+                    <p>
+                        ポイント：<br>
+                        　listening状態をアニメーションで分かりやすく表現<br>
+                        　文字を読まなくても操作できるUIを意識<br>
+                        　Functionsで通知処理を実装
+                    </p>
+                    <div class="detail_link">
+                        <button class="link_btn"><a href="https://mydairyproject-8b2b3.web.app" target="_blank">アプリに移動</a></button>
+                        <div class="small_text">
+                            ID : sample@sample.com<br>
+                            password : sample
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="overlay_python" class="overlay_container hidden">
+            <div id="close_python" class="menu_box close"><span class="material-icons">close</span></div>
+            <div class="detail_container">
+                <img src="img/winapp.png" class="overlay_img">
+                <div>
+
+                    <h3>Python(Tkinter)で作成した<br>　windows向けtodo管理アプリ</h3>
+                    <p>
+                        使用技術：<br>
+                        　Python3.12<br>
+                        　Tkinter（デスクトップUI）<br>
+                        　SQLite3（ローカルデータベース）<br>
+                        　PyInstaller（exe化：onedir）<br>
+                        　Inno Setup（windowsインストーラー作成）
+                    </p>
+                    <p>
+                        ポイント：<br>
+                        　リマインダーを付箋形式で常駐<br>
+                        　タスクはSQLiteに保存し、追加・削除が可能<br>
+                        　ワンクリックで起動できるexe版と、<br>
+                        　windowsにインストールできるセットアップ版を作成し、<br>
+                        　配布できるようにしました
+                    </p>
+                    <div class="detail_link">
+                        <button class="link_btn git"><a href="">githubリポジトリに移動</a></button>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div id="menu" class="menu_box"><span class="material-icons">menu</span></div>
+    </header>
+    <main>
+        <a id="hero"></a>
+        <section class="hero_container">
+            <div class="small_circle"></div>
+            <div class="big_circle"></div>
+            <div class="hero_title">
+                <h1>bajita's portfolio</h1>
+                <h2>使う人にやさしい技術を</h2>
+                <p>ひとりひとりに合わせた作品つくりを目指しています</p>
+            </div>
+        </section>
+        <a id="about"></a>
+        <section class="about_container">
+           <h1>about</h1>
+           <div class="about_content">
+                <div class="face">
+                    <div class="face_outercircle">
+                        <div class="face_innercircle">
+                        </div>
+                    </div>
+                    <img src="img/face.jpg" class="face_img" alt="face">
+                </div>
+                <p class="about_text">
+                    リハビリの仕事で、障碍のある方のパソ<br>
+                    コンやタブレット利用をお手伝いするう<br>
+                    ちに、自分でも作ってみたくなりました。<br>
+
+                    cssで動くシンプルなアニメーションの<br>
+                    ホームページ、javascriptを使った動き<br>
+                    のあるホームページ、firebaseを使った<br>
+                    アプリ作り、pythonでの簡単な<br>
+                    windowsアプリ作りをやってみました。
+                </p>
+           </div>
+        </section>
+        <a id="work"></a>
+        <section class="work_container">
+            <h1>work</h1>
+            <div class="wwork_grid">
+                <div class="card">
+                    <div class="card_img">
+                        <img class="card_image" src="img/web_mobile.jpg"/>
+                    </div>
+                    <h3>音声認識メッセージアプリ</h3>
+                    <h4>React × firebase</h4>
+                    <button class="detail_btn" id="detail_web">詳細を見る</button>
+                    <div class="tag">webapp</div>
+                </div>
+                <div class="card">
+                    <div class="card_img">
+                        <img class="card_image" src="img/win_mobile.png"/>
+                    </div>
+                    <h3>付箋で表示するtodoアプリ</h3>
+                    <h4>Python Tkinter</h4>
+                    <button class="detail_btn" id="detail_python">詳細を見る</button>
+                    <div class="tag">winapp</div>
+                </div>
+                <div class="card">
+                    <div class="card_img">
+                        <img class="card_image" src="img/cafe2.png"/>
+                    </div>
+                    <h3>カフェサイト(静的web)</h3>
+                    <h4>HTML/CSS(レスポンシブ)</h4>
+                    <button class="detail_btn"><a target="_blank" href="https://bajita19720814.github.io/sample3/.">サイトに移動</a></button>
+                    <div class="tag">HP</div>
+                </div>
+                <div class="card">
+                    <div class="cards_img">
+                        <img class="card1_image" src="img/sample1_1.png"/>
+                        <img class="card2_image" src="img/map1.png"/>
+                        <img class="card3_image" src="img/sample2_1.png"/>
+                    </div>
+                    <h3>HTML/CSS小作品</h3>
+                    <h4>animation/details/map埋め込み</h4>
+                    <div class="btn_frame">
+                        <button class="html_btn"><a target="_blank" href="https://bajita19720814.github.io/sample1/." >animation<br>サイトに移動</a></button>
+                        <button class="html_btn"><a target="_blank" href="https://bajita19720814.github.io/sample2/.">details/map<br>サイトに移動</a></button>
+
+                    </div>
+                    <div class="tag">HP</div>
+                </div>
+
+            </div>
+        </section>
+        <a id="contact"></a>
+        <section class="contact_container">
+           <h1>contact</h1>
+           <h5>お気軽にご連絡ください</h5>
+           <div class="email_frame">
+                <div class="email_icon"><span class="material-symbols-outlined">mail</span></div>
+                <div class="small_text"><a href="mailto:kishimoto.seiichi@coral.plala.or.jp">kishimoto.seiichi@coral.plala.or.jp</a></div>
+           </div>
+        </section>
+
+    </main>
+    <footer><img src="img/logo.png"></footer>
+    <script src="main.js"></script>
+</body>
+</html>
