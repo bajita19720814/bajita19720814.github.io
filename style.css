@@ -8,6 +8,9 @@ body {
   margin: 0;
   line-height: 1.5;
 }
+.none_scrole {
+    overflow: hidden;
+}
 .hidden {
     display: none;
 }
@@ -43,6 +46,9 @@ header {
     right: calc((100vw - 369px)/2);
     z-index: 2;
 }
+.nav {
+    display: none;
+}
 .menu_box {
     width: 36px;
     height: 36px;
@@ -59,6 +65,7 @@ header {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 3;
+    overflow: auto;
 }
 #overlay_menu {
     margin: 60px auto;
@@ -93,7 +100,6 @@ a {
     border-radius: 24px;
     background-color: rgba(247, 243, 237, 0.9);
     padding: 16px;
-    overflow: auto;
 }
 .detail_container {
     display: flex;
@@ -118,7 +124,8 @@ video {
 }
 .hero_container {
     background-color: #F7F3ED;
-    width: 375px;
+    min-width: 375px;
+    max-width: 375px;
     height: 163px;
     margin: 0 auto;
     padding: 12px;
@@ -170,7 +177,8 @@ p {
     line-height: 1.2;
 }
 .about_container {
-    width: 375px;
+    min-width: 375px;
+    max-width: 375px;
     height: 180px;
     margin: 0 auto;
     padding: 24px;
@@ -217,17 +225,12 @@ p {
     z-index: 1;
 }
 .work_container {
-    width: 375px;
-    height: 1104px;
+    min-width: 375px;
+    max-width: 375px;
     margin: 0 auto;
     padding: 24px;
 }
-.work_grid {
-    width: 327px;
-    display: flex;
-    flex-direction: row;
-    padding-top: 24px;
-}
+
 .card {
     position: relative;
     width: 327px;
@@ -238,23 +241,38 @@ p {
     padding: 12px;
 }
 
-.card_img {
+.web_image {
     width: 160px;
     height: 120px;
     margin: 0 auto;
     border: none;
+    background-image: url(img/web_mobile.jpg);
+    border-radius: 16px;
+    background-size: cover;
+}
+.win_image {
+    width: 160px;
+    height: 120px;
+    margin: 0 auto;
+    border: none;
+    background-image: url(img/win_mobile.png);
+    border-radius: 16px;
+    background-size: cover;
+}
+.cafe_image {
+    width: 160px;
+    height: 120px;
+    margin: 0 auto;
+    border: none;
+    background-image: url(img/cafe2.png);
+    border-radius: 16px;
+    background-size: cover;
 }
 .cards_img {
     position: relative;
     width: 160px;
     height: 120px;
     margin: 0 auto;
-    border: none;
-}
-.card_image {
-    width: 160px;
-    height: 120px;
-    border-radius: 16px;
     border: none;
 }
 .card1_image {
@@ -360,7 +378,8 @@ h4 {
     line-height: 24px;
 }
 .contact_container {
-    width: 375px;
+    min-width: 375px;
+    max-width: 375px;
     height: 162px;
     margin: 0 auto;
     padding: 24px;
@@ -391,10 +410,240 @@ h5 {
     margin-left: 12px;
     margin-top: 6px;
 }
+.sampleid {
+    font-size: 11px;
+    font-weight: 600;
+    margin-left: 12px;
+    margin-top: 6px;
+}
 footer {
     text-align: center;
     padding: 8px;
 }
 footer img {
     width: 92px;
+}
+
+@media(min-width: 768px) {
+    .overlay_container {
+        margin-top: 24px;
+        width: 720px;
+        padding: 16px;
+    }
+    .detail_container {
+        flex-direction: row;
+    }
+    video {
+        margin-top: 8px;
+        width: 180px;
+        height: 320px;
+    }
+    .overlay_img {
+        margin-top: 60px;
+        width: 180px;
+        height: 240px;
+    }
+    #menu {
+        display: none;
+    }
+    .nav {
+        display: block;
+        position: fixed;
+        right: 8px;
+        padding: 2px;    
+        z-index: 2;
+    }
+    ul {
+        display: flex;
+        height: 32px;
+        width: 260px;
+        color: #7A6F67;
+        font-size: 16px;
+        list-style: none;
+        padding: 0;
+        border-radius: 8px;        
+        background-color: rgba(247, 243, 237, 0.6);
+        justify-content: space-around;
+    }
+    li {
+        line-height: 32px;
+    }
+    .hero_container {
+        min-width: auto;
+        max-width: 1200px;
+        height: 520px;
+        overflow: hidden;
+    }
+    .hero_title {
+        top: 80px;
+        left: 120px;
+    }
+    h1 {
+        font-size: 48px;
+    }
+    h2 {
+        font-size: 32px;
+        margin-top: 12px;
+        margin-bottom: 24px;
+    }
+    p {
+        margin-top: 12px;
+        font-size: 16px;
+    }
+    .big_circle {
+        margin-top: -520px;
+        margin-left: 780px;
+        width: 360px;
+        height: 360px;
+    }
+    .small_circle {
+        margin-top: 292px;
+        margin-left: 50px;
+        width: 220px;
+        height: 220px;
+    }
+    
+    .about_container {
+        min-width: auto;
+        max-width: 1200px;
+        height: 400px;
+        padding: 80px 120px;
+    }
+    .about_content {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .face {
+        width: 150px;
+        height: 150px;
+        margin-top: -48px;
+        margin-left: 24px;
+    }
+    .face_outercircle {
+        width: 144px;
+        height: 144px;
+    }
+    .face_innercircle {
+        width: 136px;
+        height: 136px;
+    }
+    .face_img {
+        width: 130px;
+        height: 130px;
+    }
+    .about_text {
+        width: auto;
+    }
+    .mobile {
+        display: none;
+    }
+    .work_container {
+        min-width: auto;
+        max-width: 1200px;
+        padding: 80px 120px;
+    }
+    .work_grid {
+        display: flex;
+        width: auto;
+        margin: 24px auto;
+        flex-wrap: wrap;
+    }
+    .card {
+        width: 282px;
+        height: 360px;
+        margin: 16px;
+    }
+    .card_img {
+        width: 160px;
+        height: 200px;
+        margin-top: 16px;
+    }
+    .web_image {
+        width: 160px;
+        height: 200px;
+        background-image: url(img/web_pc.png);
+        margin: 8px auto;
+    }
+    .win_image {
+        width: 160px;
+        height: 200px;
+        background-image: url(img/win_pc.png);
+        margin: 8px auto;
+    }
+    .cafe_image {
+        width: 160px;
+        height: 200px;
+        background-image: url(img/cafe1.png);
+        margin: 8px auto;
+    }
+    .cards_img {
+        width: 160px;
+        height: 200px;
+        margin: 8px auto;
+    }
+    .card1_image {
+        width: 132px;
+        height: 83px;
+        border-radius: 16px;
+    }
+    .card2_image {
+        top: 80px;
+        right: 0;
+        width: 90px;
+        height: 60px;
+        border-radius: 16px;
+    }
+    .card3_image {
+        width: 132px;
+        height: 63px;
+        border-radius: 16px;
+    }
+    h3 {
+        font-size: 16px;
+    }
+    h4 {
+        font-size: 14px;
+        margin-top: 6px;
+    }
+    .detail_btn {
+        margin-left: 102px;
+        margin-top: 12px;
+    }
+    .btn_frame {
+        margin-left: 36px;
+    }
+    .contact_container {
+        min-width: auto;
+        max-width: 1200px;
+        height: 300px;
+        padding: 48px 120px;
+    }
+    h5 {
+        font-size: 18px;
+        margin-top: 24px;
+        margin-left: 48px;
+    }
+    .email_frame {
+        margin-left: 240px;
+    }
+    .email_icon {
+        width: 48px;
+        height: 48px;
+    }
+    .material-symbols-outlined {
+        font-size: 36px;
+        margin-top: 6px;
+        margin-left: 6px;
+    }
+    .small_text {
+        font-size: 20px;
+        line-height: 36px;
+    }
+    .sampleid {
+        font-size: 12px;
+    }
+    .git {
+        margin-left: 200px;
+    }
 }

@@ -1,5 +1,7 @@
 'use strict'; 
 {
+
+   const body = document.querySelector("body");
    const menu = document.getElementById("menu");
    const overlay = document.getElementById("overlay");
    const close = document.getElementById("close");
@@ -20,12 +22,14 @@
         overlay_menu.classList.remove("hidden");
     });
     detail_web.addEventListener('click', () => {
+        body.classList.add("none_scrole");
         overlay.classList.remove("hidden");
         overlay_web.classList.remove("hidden");
     });
     detail_python.addEventListener('click', () => {
         overlay.classList.remove("hidden");
         overlay_python.classList.remove("hidden");
+        body.classList.add("none_scrole");
     });
     close.addEventListener('click', () => {
         overlay.classList.add("hidden");
@@ -34,10 +38,12 @@
     close_web.addEventListener('click', () => {
         overlay.classList.add("hidden");
         overlay_web.classList.add("hidden");
+        body.classList.remove("none_scrole");
     });
     close_python.addEventListener('click', () => {
         overlay.classList.add("hidden");
         overlay_python.classList.add("hidden");
+        body.classList.remove("none_scrole");
     });
     indexes.forEach(index => {
                 index.addEventListener('click', () => {
