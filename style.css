@@ -506,8 +506,8 @@ footer img {
     .about_container {
         min-width: auto;
         max-width: 1200px;
-        height: 400px;
         padding: 80px 120px;
+        height: auto;
     }
     .about_content {
         display: flex;
@@ -544,15 +544,17 @@ footer img {
         padding: 80px 120px;
     }
     .work_grid {
-        display: flex;
-        width: auto;
-        margin: 24px auto;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+        width: 100%;
+        gap: 12px;
+        place-items: center;
+        margin-top: 48px;
     }
     .card {
         width: 282px;
         height: 360px;
-        margin: 16px;
+        margin: 16px 8px;
     }
     .card_img {
         width: 160px;
@@ -645,5 +647,16 @@ footer img {
     }
     .git {
         margin-left: 200px;
+    }
+    footer {
+        padding: 16px;
+    }
+    footer img {
+        width: 160px;
+    }
+    @media (min-width: 1200px) {
+        .nav {
+            right: calc((100vw - 1200px)/2 + 8px);
+        }
     }
 }
