@@ -457,16 +457,18 @@ footer img {
         display: flex;
         height: 32px;
         width: 260px;
-        color: #7A6F67;
         font-size: 16px;
         list-style: none;
         padding: 0;
         border-radius: 8px;        
-        background-color: rgba(247, 243, 237, 0.6);
+        background-color: rgba(247, 243, 237, 0.65);
         justify-content: space-around;
     }
     li {
         line-height: 32px;
+    }
+    .nav a {
+        color:#7A6F67;
     }
     .hero_container {
         min-width: auto;
