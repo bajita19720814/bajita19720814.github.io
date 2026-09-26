@@ -380,35 +380,43 @@ h4 {
 .contact_container {
     min-width: 375px;
     max-width: 375px;
-    height: 162px;
     margin: 0 auto;
     padding: 24px;
 }
 h5 {
-    font-size: 12px;
+    font-size: 9px;
     font-weight: 300;
     color: #4A3F35;
     margin: 0;
     margin-top: 8px;
 }
+.contact_ul {
+    list-style: none;
+    padding: 0;
+    margin: 16px;
+}
 .email_icon {
-    width: 28px;
-    height: 28px;
-    border-radius: 50%;
-    background-color: #ede8e4;
-    color: #4A3F35;
+    width: 32px;
+    height: 32px;
+}
+.email_icon img{
+    width: 32px;
+    height: 32px;
 }
    
 .email_frame {
     display: flex;
-    margin-top: 20px;
-    margin-left: 52px;
+    align-items: center;
+    
 }
 .small_text {
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 600;
-    margin-left: 12px;
-    margin-top: 6px;
+    margin-left: 8px;
+    color: #3A2F25;
+}
+.small_text a {
+    font-weight: 500;
 }
 .sampleid {
     font-size: 11px;
@@ -453,7 +461,7 @@ footer img {
         padding: 2px;    
         z-index: 2;
     }
-    ul {
+    .nav > ul {
         display: flex;
         height: 32px;
         width: 260px;
@@ -464,7 +472,7 @@ footer img {
         background-color: rgba(247, 243, 237, 0.65);
         justify-content: space-around;
     }
-    li {
+    .nav li {
         line-height: 32px;
     }
     .nav a {
@@ -620,7 +628,6 @@ footer img {
     .contact_container {
         min-width: auto;
         max-width: 1200px;
-        height: 300px;
         padding: 48px 120px;
     }
     h5 {
@@ -628,21 +635,12 @@ footer img {
         margin-top: 24px;
         margin-left: 48px;
     }
-    .email_frame {
-        margin-left: 240px;
+    .contact_ul {
+        margin: 24px 48px;
     }
-    .email_icon {
-        width: 48px;
-        height: 48px;
-    }
-    .material-symbols-outlined {
-        font-size: 36px;
-        margin-top: 6px;
-        margin-left: 6px;
-    }
+    
     .small_text {
-        font-size: 20px;
-        line-height: 36px;
+        font-size: 16px;
     }
     .sampleid {
         font-size: 12px;
