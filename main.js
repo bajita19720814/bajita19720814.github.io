@@ -15,15 +15,15 @@
    const close_python = document.getElementById("close_python");
    
    
-
-
-    menu.addEventListener('click', () => {
+    menu.addEventListener('click', (e) => {
+        e.preventDefault();
         overlay.classList.add("show");
         setTimeout(() => {
             overlay_menu.classList.add("show");
         }, 150);
     });
-    detail_web.addEventListener('click', () => {
+    detail_web.addEventListener('click', (e) => {
+        e.preventDefault();
         body.classList.add("none_scrole");
         overlay_menu.classList.add("hidden");
         overlay.classList.add("show");
@@ -31,7 +31,8 @@
             overlay_web.classList.add("show");
         }, 150);
     });
-    detail_python.addEventListener('click', () => {
+    detail_python.addEventListener('click', (e) => {
+        e.preventDefault();
         overlay.classList.add("show");
         body.classList.add("none_scrole");
         overlay_menu.classList.add("hidden");
