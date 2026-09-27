@@ -18,38 +18,58 @@
 
 
     menu.addEventListener('click', () => {
-        overlay.classList.remove("hidden");
-        overlay_menu.classList.remove("hidden");
+        overlay.classList.add("show");
+        setTimeout(() => {
+            overlay_menu.classList.add("show");
+        }, 150);
     });
     detail_web.addEventListener('click', () => {
         body.classList.add("none_scrole");
-        overlay.classList.remove("hidden");
-        overlay_web.classList.remove("hidden");
+        overlay_menu.classList.add("hidden");
+        overlay.classList.add("show");
+        setTimeout(() => {
+            overlay_web.classList.add("show");
+        }, 150);
     });
     detail_python.addEventListener('click', () => {
-        overlay.classList.remove("hidden");
-        overlay_python.classList.remove("hidden");
+        overlay.classList.add("show");
         body.classList.add("none_scrole");
+        overlay_menu.classList.add("hidden");
+        overlay_web.classList.add("hidden");
+        setTimeout(() => {
+            overlay_python.classList.add("show");
+        }, 150);
     });
     close.addEventListener('click', () => {
-        overlay.classList.add("hidden");
-        overlay_menu.classList.add("hidden");
+        overlay_menu.classList.remove("show");
+        setTimeout(() => {
+            overlay.classList.remove("show");
+        }, 100);
     });
     close_web.addEventListener('click', () => {
-        overlay.classList.add("hidden");
-        overlay_web.classList.add("hidden");
-        body.classList.remove("none_scrole");
+        overlay_web.classList.remove("show");
+        setTimeout(() => {
+            overlay.classList.remove("show");
+            body.classList.remove("none_scrole");
+            overlay_menu.classList.remove("hidden");
+        }, 150);
     });
     close_python.addEventListener('click', () => {
-        overlay.classList.add("hidden");
-        overlay_python.classList.add("hidden");
-        body.classList.remove("none_scrole");
+        overlay_python.classList.remove("show");
+        setTimeout(() => {
+            overlay.classList.remove("show");
+            body.classList.remove("none_scrole");
+            overlay_menu.classList.remove("hidden");
+            overlay_web.classList.remove("hidden");
+        }, 100);
     });
     indexes.forEach(index => {
-                index.addEventListener('click', () => {
-                overlay.classList.add("hidden");
-                overlay_menu.classList.add("hidden");
-            });
+        index.addEventListener('click', () => {
+            overlay_menu.classList.remove("show");
+            setTimeout(() => {
+                overlay.classList.remove("show");
+            }, 100);
+        });
     });
     
     
