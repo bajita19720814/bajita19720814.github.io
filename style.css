@@ -295,6 +295,15 @@ p {
     border-radius: 16px;
     background-size: cover;
 }
+.parts_image {
+    width: 160px;
+    height: 120px;
+    margin: 0 auto;
+    border: none;
+    background-image: url(img/parts_mobile.png);
+    border-radius: 16px;
+    background-size: cover;
+}
 .cards_img {
     position: relative;
     width: 160px;
@@ -614,6 +623,12 @@ footer img {
         width: 160px;
         height: 200px;
         background-image: url(img/cafe1.png);
+        margin: 8px auto;
+    }
+    .parts_image {
+        width: 160px;
+        height: 200px;
+        background-image: url(img/parts_pc.png);
         margin: 8px auto;
     }
     .cards_img {
